@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NPS PARK DEMO SITE - WDD231</title>
-  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="module" src="/js/main.js" defer></script>
 </head>
+
 <body>
   <div id="content">
     <header>
@@ -14,7 +17,7 @@
     </header>
     <main>
       <section id="hero">
-        <img src="/src/public//images/us-map.png" alt="Map of the US">
+        <img id="heroImage" src="/images/us-map.png" alt="Map of the US">
       </section>
       <section id="parkInfo">
         <h2 id="parkName">Park Name</h2>
@@ -24,12 +27,56 @@
         </div>
       </section>
       <section id="parkMenu">
-
+        <ul>
+          <li>
+            <p>INFO</p>
+            <p>
+              <svg>
+                <use href="/images/sprite.svg#info"></use>
+              </svg>
+            </p>
+          </li>
+          <li>
+            <p>ALERTS
+            <p>
+            <p>
+              <svg>
+                <use href="/images/sprite.svg#safety-caution-alerts"></use>
+              </svg>
+            </p>
+            </p>
+          </li>
+          <li>
+            <p>MAPS</p>
+            <p>
+              <svg>
+                <use href="/images/sprite.svg#location_on"></use>
+              </svg>
+            </p>
+          </li>
+          <li>
+            <p>EVENTS</p>
+            <p>
+              <svg>
+                <use href="/images/sprite.svg#event"></use>
+              </svg>
+            </p>
+          </li>
+          <li>
+            <p>FEES</p>
+            <p>
+              <svg>
+                <use href="/images/sprite.svg#passes-and-fees"></use>
+              </svg>
+            </p>
+          </li>
+        </ul>
       </section>
     </main>
     <footer>
-      
+      <p>&copy; 2026 WDD 231 Project Site</p>
     </footer>
   </div>
 </body>
+
 </html>
