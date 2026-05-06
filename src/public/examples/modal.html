@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+        .show {
+            display: flex;
+        }
+        #modalOverlay {
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 100;
+            position: fixed;
+        }
+        .modalBox {
+            height: 200px;
+            width: min(500px, 100%);
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>A simple Modal</h1>
+    </header>
+    <p>Dawg please don't click this button</p>
+    <button>THE BUTTON😈</button>
+
+    <div id="modalOverlay" class="hidden">
+        <div class="modalBox">
+            YOU CLICKED THE BUTTON!
+        </div>
+    </div>
+    <script>
+        const overlay = document.querySelector("#modalOverlay");
+        const button = document.querySelector("button");
+        const box = document.querySelector(".modalBox");
+
+        function showModal() {
+            overlay.classList.remove('hidden');
+            overlay.classList.add('show');
+        }
+        function closeModal() {
+            overlay.classList.remove('show');
+            overlay.classList.add('hidden');
+        }
+
+        button.addEventListener('click', showModal);
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        })
+
+        overlay.addEventListener("click", () => {
+            closeModal();
+        })
+
+        box.addEventListener("click", (event) => {
+            event.stopPropagation();
+        })
+
+
+    </script>
+</body>
+</html>
