@@ -1,0 +1,71 @@
+{
+  "id": "p-1024",
+  "name": {
+    "first": "Alice",
+    "middle": "Marie",
+    "last": "Johnson"
+  },
+  "age": 30,
+  "birthDate": "1995-04-12",
+  "isStudent": false,
+  "email": "alice.johnson@example.com",
+  "phoneNumbers": [
+    {
+      "type": "mobile",
+      "number": "555-123-4567"
+    },
+    {
+      "type": "work",
+      "number": "555-987-6543"
+    }
+  ],
+  "address": {
+    "street": "123 Main St",
+    "apartment": "4B",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "10001",
+    "country": "USA",
+    "coordinates": {
+      "latitude": 40.7128,
+      "longitude": -74.006
+    }
+  },
+  "job": {
+    "title": "Software Developer",
+    "department": "Engineering",
+    "company": "Tech Solutions Inc.",
+    "yearsEmployed": 5,
+    "skills": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Node.js",
+      "SQL"
+    ]
+  },
+  "education": [
+    {
+      "level": "Bachelor's",
+      "field": "Computer Science",
+      "institution": "BYU-Idaho",
+      "graduationYear": 2018
+    }
+  ],
+  "hobbies": [
+    "hiking",
+    "reading",
+    "photography"
+  ],
+  "emergencyContact": {
+    "name": "Michael Johnson",
+    "relationship": "Brother",
+    "phone": "555-222-3333"
+  },
+  "preferences": {
+    "favoriteColor": "blue",
+    "newsletterSubscribed": true,
+    "language": "English",
+    "theme": "dark"
+  }
+}
