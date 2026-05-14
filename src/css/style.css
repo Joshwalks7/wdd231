@@ -147,3 +147,6 @@ footer {
   cursor: pointer;
   margin-bottom: 0.5rem;
 }
+iframe {
+  height: 300px;
+}
