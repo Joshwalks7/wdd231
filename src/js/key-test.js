@@ -16,7 +16,7 @@ async function getPark() {
 
   console.log(data);
 
-  const parkTag = document.getElementById("park-info");
+  const parkTag = document.getElementById("parkInfo");
   parkTag.innerText = JSON.stringify(data);
 }
 
