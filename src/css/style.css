@@ -406,7 +406,7 @@ iframe {
 }
 #favorites-section {
   position: absolute;
-  top: 162px;
+  top: 150px;
   width: min(960px, calc(100% - 2rem));
   opacity: 0.7;
   z-index: 5;
