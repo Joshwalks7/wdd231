@@ -40,6 +40,13 @@ export function initFeedback() {
   closeButton.addEventListener('click', closeModal);
   thanksCloseButton.addEventListener('click', closeModal);
 
+  document.addEventListener('keydown', (event) => {
+    // Check if the modal is currently open and the Escape key was pressed
+    if (event.key === 'Escape' && !modal.classList.contains('is-hidden')) {
+        closeModal();
+    }
+    });
+
   form.addEventListener('submit', (event) => {
     event.preventDefault();
 
